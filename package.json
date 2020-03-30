@@ -1,0 +1,23 @@
+{
+  "name": "livescript-express-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --ext ls --exec lsc src/index",
+    "postinstall": "lsc -o dist -c src",
+    "start": "node dist/index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "livescript": "^1.6.0",
+    "nodemon": "^2.0.2"
+  }
+}
